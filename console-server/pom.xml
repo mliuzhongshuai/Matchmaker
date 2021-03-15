@@ -8,28 +8,24 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>org.matchmaker</groupId>
-    <artifactId>name-server</artifactId>
+    <artifactId>console-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>name-server</name>
-    <description>name-server(寻址、元数据 服务)</description>
+    <name>console-server</name>
+    <description>控制台服务 -提供管理接入及topic配置等操作</description>
     <properties>
         <java.version>11</java.version>
     </properties>
-
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-undertow</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

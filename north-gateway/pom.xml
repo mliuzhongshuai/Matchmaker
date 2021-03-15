@@ -8,29 +8,19 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>org.matchmaker</groupId>
-    <artifactId>name-server</artifactId>
+    <artifactId>north-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>name-server</name>
-    <description>name-server(寻址、元数据 服务)</description>
+    <name>north-gateway</name>
+    <description>面向业务侧的网关服务 提供 消息发送 、订阅等接口</description>
     <properties>
         <java.version>11</java.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-undertow</artifactId>
-        </dependency>
+
     </dependencies>
 
     <build>
