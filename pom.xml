@@ -11,10 +11,11 @@
 
     <modules>
         <module>broker</module>
-        <module>console-server</module>
+        <module>console</module>
         <module>name-server</module>
         <module>north-gateway</module>
-        <module>route-server</module>
+        <module>south-gateway</module>
+        <module>common</module>
     </modules>
 
     <properties>

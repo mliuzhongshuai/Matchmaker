@@ -8,18 +8,11 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>org.matchmaker</groupId>
-    <artifactId>north-gateway</artifactId>
+    <artifactId>common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>north-gateway</name>
-    <description>面向业务侧的网关服务 提供 消息发送 、订阅等接口</description>
+    <name>common</name>
+    <description>同步模块</description>
     <properties>
         <java.version>11</java.version>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-    </dependencies>
 </project>

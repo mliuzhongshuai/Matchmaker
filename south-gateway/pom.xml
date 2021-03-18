@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>org.matchmaker</groupId>
-    <artifactId>route-server</artifactId>
+    <artifactId>south-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>route-server</name>
     <description>client 链接 broker前的网关服务</description>
@@ -35,15 +35,15 @@
         </dependency>
     </dependencies>
 
-    <build>
+   <!-- <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
-                    <source>11</source>  <!--language level-->
-                    <target>11</target>  <!--java compiler version-->
+                    <source>11</source>  &lt;!&ndash;language level&ndash;&gt;
+                    <target>11</target>  &lt;!&ndash;java compiler version&ndash;&gt;
                 </configuration>
             </plugin>
             <plugin>
@@ -51,6 +51,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 
 </project>
