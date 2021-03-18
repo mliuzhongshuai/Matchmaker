@@ -10,7 +10,7 @@ public class NameServerUriConstant {
     /**
      * 服务注册到 nameserverui 的接口
      */
-    public static final String SVC_REGISTER_URI = "/v0/svc/register";
+    public static final String SVC_REGISTER_URI = "/v0/svc/beat";
     /**
      * 获取健康的 svc list
      */

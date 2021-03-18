@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "svc-health-check",
+      "type": "org.matchmaker.nameserver.configure.SvcHealthScheduledStrategyProperties",
+      "sourceType": "org.matchmaker.nameserver.configure.SvcHealthScheduledStrategyProperties"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
