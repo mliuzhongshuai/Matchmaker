@@ -18,6 +18,11 @@ public class BrokerSvcInfo extends BaseSvcInfo {
     }
 
     /**
+     * 外网地址 xxxxx:prot
+     */
+    private String internetAddress;
+
+    /**
      * 当前服务网络连接数
      */
     private Integer netSocketNum;
