@@ -1,5 +1,6 @@
 package org.matchmaker.common.payload;
 
+import lombok.ToString;
 import org.matchmaker.common.enums.SvcRole;
 
 /**
@@ -7,6 +8,7 @@ import org.matchmaker.common.enums.SvcRole;
  * @description 各服务间 payload  基本信息
  * @date 2021-03-15 15:01
  **/
+@ToString
 public class BaseSvcInfo {
 
     public BaseSvcInfo(SvcRole svcRole, String ipAddress, Long timestamp) {
@@ -40,6 +42,9 @@ public class BaseSvcInfo {
     public Long getTimestamp() {
         return timestamp;
     }
+
+
+
 
 
 }

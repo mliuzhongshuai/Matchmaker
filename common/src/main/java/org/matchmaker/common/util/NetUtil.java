@@ -19,6 +19,8 @@ import java.util.regex.Pattern;
  **/
 public class NetUtil {
 
+    private static final Pattern pattern = Pattern.compile("([1-9]|[1-9]\\d|1\\d{2}|2[0-4]\\d|25[0-5])(\\.(\\d|[1-9]\\d|1\\d{2}|2[0-4]\\d|25[0-5])){3}");
+
     /**
      * 获取内网ip
      *
@@ -170,6 +172,16 @@ public class NetUtil {
         }
         return false;
     }
+
+
+    public static boolean ipVerify(String ipAddressStr) {
+        if (null == ipAddressStr || ipAddressStr.length() == 0 || ipAddressStr.equals(" ")) {
+            return Boolean.FALSE;
+        }
+        Matcher matcher = pattern.matcher(ipAddressStr);
+        return matcher.matches();
+    }
+
 
     public static class InetAddressValidator implements Serializable {
         private static final int IPV4_MAX_OCTET_VALUE = 255;
