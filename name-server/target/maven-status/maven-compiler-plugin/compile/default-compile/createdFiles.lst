@@ -1,8 +1,0 @@
-org/matchmaker/nameserver/configure/WebContainerUndertowConfigure.class
-org/matchmaker/nameserver/core/SvcInformationContext.class
-META-INF/spring-configuration-metadata.json
-org/matchmaker/nameserver/core/SvcHealthHandler.class
-org/matchmaker/nameserver/endpoint/SvcEndpoint.class
-org/matchmaker/nameserver/configure/SvcHealthScheduledStrategyProperties.class
-org/matchmaker/nameserver/core/SvcMateInformation.class
-org/matchmaker/nameserver/NameServerApplication.class

@@ -1,9 +1,0 @@
-##web 容器相关配置
-server:
-  port: 6660
-  undertow:
-    threads:
-      io: 2
-      worker: 20
-    buffer-size: 1024
-    direct-buffers: true
