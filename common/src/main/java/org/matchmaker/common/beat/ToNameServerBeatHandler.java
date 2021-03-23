@@ -56,15 +56,10 @@ public class ToNameServerBeatHandler {
      * 启动心跳续约
      */
     public void beatStart() {
-
         nameServerInfo.getIpAddress().forEach(domain -> {
-
             String beatUrl = domain + NameServerUriConstant.SVC_REGISTER_URI;
-
             scheduledExecutorService.scheduleWithFixedDelay(() -> {
-
                 BaseSvcInfo baseSvcInfo = dynamicSvcInfoInterface.getSvcInfo();
-
                 try {
                     HttpClientUtil.post(beatUrl, objectMapper.writeValueAsString(baseSvcInfo));
                 } catch (Exception e) {

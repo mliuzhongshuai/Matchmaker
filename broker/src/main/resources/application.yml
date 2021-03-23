@@ -1,5 +1,14 @@
+#broker 主服务配置
+broker:
+  port: 6662
+  ##外网地址,默认会自动获取
+  internet-address: 345.0.0.25:6661
+
+
+
+
 
 name-server:
   address:
-    - http://127.0.0.25
-    - http://127.0.0.26
+    - http://127.0.0.25:6661
+    - http://127.0.0.26:6661

@@ -18,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author Liu Zhongshuai
+ *
  * @date 2021-03-16 14:02
  **/
 public class BrokerOnApplicationStart implements ApplicationListener<ApplicationReadyEvent> {
