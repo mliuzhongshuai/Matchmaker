@@ -13,16 +13,16 @@ public class MetricsFactory {
     private MetricsFactory() {
     }
 
-    private static final Map<String, Object> metricsFactory = new HashMap<>(4);
+    private static final Map<Class, Object> metricsFactory = new HashMap<>(4);
 
     static {
-        metricsFactory.put(ConnectionStatistics.class.getName(), new BrokerClientConnectionStatistics());
-        metricsFactory.put(CpuUsageStatistics.class.getName(), new HostCpuUsageStatistics());
-        metricsFactory.put(MemoryUsageStatistics.class.getName(), new JvmMemoryUsageStatistics());
+        metricsFactory.put(ConnectionStatistics.class, new BrokerClientConnectionStatistics());
+        metricsFactory.put(CpuUsageStatistics.class, new HostCpuUsageStatistics());
+        metricsFactory.put(MemoryUsageStatistics.class, new JvmMemoryUsageStatistics());
     }
-    
 
-    public static <T> T get(String className) {
+
+    public static <T> T get(Class className) {
         return (T) metricsFactory.get(className);
     }
 }
