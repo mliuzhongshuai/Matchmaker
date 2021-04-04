@@ -12,7 +12,7 @@ public class ConsoleSvcInfo extends BaseSvcInfo {
 
     public ConsoleSvcInfo(String ipAddress, Integer netSocketNum) {
 
-        super(SvcRole.BROKER, ipAddress, System.currentTimeMillis());
+        super(SvcRole.CONSOLE, ipAddress, System.currentTimeMillis());
 
         this.netSocketNum = netSocketNum;
     }

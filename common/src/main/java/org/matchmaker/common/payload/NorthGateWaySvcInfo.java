@@ -11,8 +11,8 @@ import org.matchmaker.common.enums.SvcRole;
 public class NorthGateWaySvcInfo extends BaseSvcInfo {
 
     public NorthGateWaySvcInfo(String ipAddress, Integer netSocketNum) {
-
-        super(SvcRole.BROKER, ipAddress, System.currentTimeMillis());
+        //System.currentTimeMillis() 会产生 system call 需要注意
+        super(SvcRole.NORTH_GATEWAY, ipAddress, System.currentTimeMillis());
 
         this.netSocketNum = netSocketNum;
     }

@@ -46,7 +46,6 @@ public class ToNameServerBeatHandler {
             thread.setName("org.matchmaker.svc.beat.worker." + UUID.randomUUID().toString());
             return thread;
         });
-
         this.beatInterval = null == interval ? SvcBeatConstant.SVC_DEFAULT_BEAT_INTERVAL : interval;
         this.nameServerInfo = nameServerInfo;
         this.dynamicSvcInfoInterface = dynamicSvcInfoInterface;
@@ -54,6 +53,7 @@ public class ToNameServerBeatHandler {
 
     /**
      * 启动心跳续约
+     * 引擎
      */
     public void beatStart() {
         nameServerInfo.getIpAddress().forEach(domain -> {

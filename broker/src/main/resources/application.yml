@@ -4,10 +4,7 @@ broker:
   ##外网地址,默认会自动获取
   internet-address: 345.0.0.25:6661
 
-
-
-
-
+#name server 地址
 name-server:
   address:
     - http://127.0.0.25:6661

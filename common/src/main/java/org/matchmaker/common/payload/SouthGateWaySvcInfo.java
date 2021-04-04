@@ -12,7 +12,7 @@ public class SouthGateWaySvcInfo extends BaseSvcInfo {
 
     public SouthGateWaySvcInfo(String ipAddress, Integer netSocketNum) {
 
-        super(SvcRole.BROKER, ipAddress, System.currentTimeMillis());
+        super(SvcRole.SOUTH_GATEWAY, ipAddress, System.currentTimeMillis());
 
         this.netSocketNum = netSocketNum;
     }
