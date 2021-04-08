@@ -4,7 +4,7 @@ import java.util.function.Consumer;
 
 /**
  * @author Liu Zhongshuai
- * @description
+ * @description 消息下行sink接口
  * @date 2021-04-03 13:19
  **/
 public interface MsgSinkInbound extends MsgSink {
