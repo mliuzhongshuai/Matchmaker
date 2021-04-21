@@ -1,6 +1,7 @@
 package org.matchmaker.broker.engine;
 
 import lombok.Getter;
+import org.matchmaker.broker.configure.BrokerProperties;
 import org.matchmaker.common.enums.BrokerServerSupportProtocol;
 
 /**
@@ -11,7 +12,7 @@ import org.matchmaker.common.enums.BrokerServerSupportProtocol;
 public class BootstrapConfig {
 
     public BootstrapConfig() {
-        this.currentOsName = getCurrentOs();
+
     }
 
 
@@ -33,8 +34,19 @@ public class BootstrapConfig {
         return this.currentOsName.equals(Os.LINUX);
     }
 
+
+    private void init(BrokerProperties brokerProperties) {
+        this.currentOsName = getCurrentOs();
+    }
+
+
     private Os getCurrentOs() {
         String osName = System.getProperty("os.name");
+
+        if (null == osName) {
+            return Os.OTHER;
+        }
+
         if (osName.startsWith("Linux")) {
             return Os.LINUX;
         } else if (osName.startsWith("Windows")) {
@@ -45,6 +57,7 @@ public class BootstrapConfig {
             return Os.OTHER;
         }
     }
+
 
     /**
      * 操作系统枚举

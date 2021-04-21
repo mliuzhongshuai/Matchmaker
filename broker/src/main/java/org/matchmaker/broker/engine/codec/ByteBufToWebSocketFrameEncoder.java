@@ -14,7 +14,7 @@ public class ByteBufToWebSocketFrameEncoder extends MessageToMessageEncoder<Byte
 
 
     @Override
-    protected void encode(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf, List<Object> out) throws Exception {
+    protected void encode(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf, List<Object> out) {
         if (byteBuf == null) {
             return;
         }

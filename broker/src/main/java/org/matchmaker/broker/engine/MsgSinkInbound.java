@@ -1,4 +1,4 @@
-package org.matchmaker.broker.sink;
+package org.matchmaker.broker.engine;
 
 import java.util.function.Consumer;
 

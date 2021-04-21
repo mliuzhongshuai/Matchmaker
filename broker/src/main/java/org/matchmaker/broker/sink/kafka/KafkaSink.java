@@ -1,8 +1,8 @@
 package org.matchmaker.broker.sink.kafka;
 
-import org.matchmaker.broker.sink.SendCallback;
-import org.matchmaker.broker.sink.MsgSinkInbound;
-import org.matchmaker.broker.sink.MsgSinkOutbound;
+import org.matchmaker.broker.engine.PushCallback;
+import org.matchmaker.broker.engine.MsgSinkInbound;
+import org.matchmaker.broker.engine.MsgSinkOutbound;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -19,8 +19,8 @@ public class KafkaSink implements MsgSinkInbound, MsgSinkOutbound {
     }
 
     @Override
-    public void asynPush(List message, SendCallback sendCallback) {
-        sendCallback.handler(message,true);
+    public void asynPush(List message, PushCallback pushCallback) {
+        pushCallback.handler(message,true);
     }
 
     @Override

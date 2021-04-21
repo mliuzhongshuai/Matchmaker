@@ -1,4 +1,4 @@
-package org.matchmaker.broker.sink;
+package org.matchmaker.broker.engine;
 
 import java.util.List;
 
@@ -20,8 +20,9 @@ public interface MsgSinkOutbound extends MsgSink {
     /**
      * 异步推送
      *
-     * @param sendCallback 推送完成逻辑
+     * @param message      推送的消息
+     * @param pushCallback 推送完成逻辑
      */
-    void asynPush(List message, SendCallback sendCallback);
+    void asynPush(List message, PushCallback pushCallback);
 
 }
